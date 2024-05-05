@@ -142,6 +142,7 @@ const Profile = () => {
         </p>
 
         <input
+          defaultValue={currentUser.username}
           type="text"
           id="username"
           placeholder="Username"
@@ -149,6 +150,7 @@ const Profile = () => {
           onChange={handleChange}
         />
         <input
+          defaultValue={currentUser.email}
           type="email"
           id="email"
           placeholder="Email"
