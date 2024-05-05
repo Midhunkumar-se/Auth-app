@@ -25,11 +25,11 @@ function SignUp() {
       });
       const data = await res.json();
       setLoading(false);
-      if (data.success === "false") {
+      if (data.success === false) {
         setError(true);
         return;
       }
-      navigate("/");
+      navigate("/sign-in");
     } catch (error) {
       setLoading(false);
       setError(true);
